@@ -1,0 +1,85 @@
+/* .practice-area-card {
+  background: #fff;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+
+  box-shadow:
+    0 3px 5px rgba(0, 0, 0, 0.15),
+    0 8px 12px rgba(0, 0, 0, 0.15),
+    0 18px 30px rgba(0, 0, 0, 0.18),
+    0 35px 55px rgba(0, 0, 0, 0.20);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.practice-area-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 5px 8px rgba(0, 0, 0, 0.16),
+    0 12px 18px rgba(0, 0, 0, 0.16),
+    0 25px 40px rgba(0, 0, 0, 0.20),
+    0 45px 70px rgba(0, 0, 0, 0.24),
+    0 70px 100px rgba(0, 0, 0, 0.14);
+} */
+ .practice-area-card-container {
+  perspective: 1200px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.practice-area-card {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  transform-style: preserve-3d;
+  transition:
+    transform 0.7s ease,
+    box-shadow 0.25s ease;
+    img {
+        height: auto;
+    }
+}
+
+.practice-area-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.practice-area-card-front,
+.practice-area-card-back {
+  position: absolute;
+  inset: 0;
+
+  background: #fff;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  box-shadow:
+    0 3px 5px rgba(0, 0, 0, 0.15),
+    0 8px 12px rgba(0, 0, 0, 0.15),
+    0 18px 30px rgba(0, 0, 0, 0.18),
+    0 35px 55px rgba(0, 0, 0, 0.20);
+}
+
+.practice-area-card-back {
+  transform: rotateY(180deg);
+}
+
+.practice-area-card-container:hover .practice-area-card {
+  transform: translateY(-8px);
+}
+
+.practice-area-card-container:hover .practice-area-card.flipped {
+  transform: rotateY(180deg) translateY(-8px);
+}
+
+

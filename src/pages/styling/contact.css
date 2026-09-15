@@ -1,0 +1,20 @@
+.mendelson-website-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(-37px);
+    h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 52px;
+        margin-bottom: 20px;
+    }
+    .contact-info {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+    }
+}
