@@ -1,6 +1,4 @@
 import './styling/home.css'
-import WhiteLogo from "../assets/WhiteLogo.svg"
-import BlackLogo from "../assets/BlackLogo.svg"
 import MLogoOne from "../assets/MLogoOne.svg"
 
 export default function Home() {
