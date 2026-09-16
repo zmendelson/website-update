@@ -9,7 +9,7 @@ export default function About() {
         <h1>About David Mendelson</h1>
         <p>{aboutText}</p>
       </div>
-      <img src={DadHeadshot} alt="Headshot" className="headshot" />
+      <img src={DadHeadshot} alt="Headshot" className="headshot" width="300" height="500" />
     </div>
   )
 }
